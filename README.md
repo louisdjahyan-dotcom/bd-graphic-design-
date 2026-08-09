@@ -5,7 +5,7 @@ Pwojè React/Vite/Tailwind ki pare pou pwodiksyon.
 ## Anvan w deploye — 3 bagay pou verifye/chanje
 
 1. **Fòm kontak la** (`src/App.jsx`, chèche `CONTACT.email`) — mete VRÈ email ou a
-   olye de `contact@bdgraphic.com`. Fòm nan sèvi ak [FormSubmit.co](https://formsubmit.co),
+   olye de `louisdjahyan@gmail.com`. Fòm nan sèvi ak [FormSubmit.co](https://formsubmit.co),
    yon sèvis gratis ki voye mesaj fòm nan dirèkteman nan email ou, san bezwen backend.
    ⚠️ **Premye fwa yon moun voye yon mesaj**, FormSubmit ap voye w yon email pou
    konfime/aktive fòm nan — klike sou lyen konfimasyon an yon sèl fwa, apre sa tout
