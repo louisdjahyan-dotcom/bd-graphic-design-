@@ -19,12 +19,6 @@ import {
   ImageOff,
 } from "lucide-react";
 
-import portfolioItemsData from "./portfolioItems.json";
-const PORTFOLIO_ITEMS = portfolioItemsData.items;
-import portfolioProjectsData from "./portfolioProjects.json";
-const portfolioProjects = portfolioProjectsData.projects;
-import CONTACT from "./settings.json";
-
 /* =========================================================
    IMAGES DU PORTFOLIO
    Toutes les images sont dans /public/images/
@@ -82,6 +76,239 @@ const IMG_BON_LUNDI_ATOUS = "/images/bon-lundi-atous.jpg";
    changez les valeurs, et il apparaîtra automatiquement dans
    le portfolio (aucun autre changement de code nécessaire).
    ========================================================= */
+const PORTFOLIO_ITEMS = [
+  {
+    id: 1,
+    title: "Nou Bouke — Kanpay Konsyantizasyon",
+    category: "Autres",
+    year: "2024",
+    client: "Kanpay Sosyal",
+    // Mete fichye a nan dosye public/images/ epi ranplase chemen an anba a
+    image: IMG_NOU_BOUKE,
+    description:
+      "Afich konsyantizasyon pou ensekirite an Ayiti, ak referans istorik 1804/2024.",
+  },
+  {
+    id: 2,
+    title: "Bière Haïtien — Bière Pam",
+    category: "Business",
+    year: "2024",
+    client: "Bière Pam",
+    image: IMG_BIERE_HAITIEN,
+    description:
+      "Etikèt ak visuel pwomosyonèl pou yon mak byè lokal, style produit shot.",
+  },
+  {
+    id: 3,
+    title: "Nana — L'huile d'aloe",
+    category: "Business",
+    year: "2024",
+    client: "Nana",
+    image: IMG_NANA_ALOE,
+    description:
+      "Design etikèt pou yon pwodwi swen chve ak lwil aloe vera.",
+  },
+  {
+    id: 4,
+    title: "Haïtien Eau",
+    category: "Business",
+    year: "2024",
+    client: "Haïtien Eau",
+    image: IMG_HAITIEN_EAU,
+    description:
+      "Branding ak visuel pwomosyonèl pou yon mak dlo pirifye.",
+  },
+  {
+    id: 5,
+    title: "C'est un autre Lundi — Learnix",
+    category: "Social Media",
+    year: "2024",
+    client: "Learnix",
+    image: IMG_LUNDI_LEARNIX,
+    description:
+      "Post motivasyonèl pou rezo sosyal, ak yon mesaj sou valè tan.",
+  },
+  {
+    id: 6,
+    title: "Diri Lakay",
+    category: "Business",
+    year: "2024",
+    client: "Diri Lakay",
+    image: IMG_DIRI_LAKAY,
+    description:
+      "Branding ak afich pwomosyonèl pou yon mak manje lokal.",
+  },
+  {
+    id: 7,
+    title: "Pasta Haïtienne",
+    category: "Business",
+    year: "2024",
+    client: "Pasta Haïtienne",
+    image: IMG_PASTA_HAITIENNE,
+    description:
+      "Visuel pwodwi pou yon mak pat alimantè lokal, style produit shot.",
+  },
+  {
+    id: 8,
+    title: "Happy Birthday — Jean Chloé",
+    category: "Événements",
+    year: "2024",
+    client: "Jean Chloé",
+    image: IMG_JEAN_CHLOE,
+    description:
+      "Afich anivèsè pèsonalize ak foto ak dat espesyal.",
+  },
+  {
+    id: 9,
+    title: "Dahana — Maïs Haïtien",
+    category: "Business",
+    year: "2024",
+    client: "Dahana",
+    image: IMG_DAHANA_MAIS,
+    description:
+      "Kanpay pwomosyonèl pou yon mak farin mayi lokal.",
+  },
+  {
+    id: 10,
+    title: "Bon Début de Semaine",
+    category: "Social Media",
+    year: "2024",
+    client: "Post Motivasyonèl",
+    image: IMG_BON_DEBUT_FEMME,
+    description:
+      "Post motivasyonèl pou kòmanse semèn nan ak bon enèji.",
+  },
+  {
+    id: 11,
+    title: "Trayizon — Joe Style",
+    category: "Musique",
+    year: "2024",
+    client: "Joe Style",
+    image: IMG_TRAYIZON,
+    description:
+      "Afich \"Coming Soon\" pou yon nouvo mizik ki ap soti.",
+  },
+  {
+    id: 12,
+    title: "Bon Début de Semaine à Tous",
+    category: "Social Media",
+    year: "2024",
+    client: "Post Motivasyonèl",
+    image: IMG_BON_DEBUT_HOMME,
+    description:
+      "Dezyèm vèsyon post motivasyonèl pou kòmansman semèn nan.",
+  },
+  {
+    id: 13,
+    title: "Soutien Psychologique — Sansibilizasyon",
+    category: "Autres",
+    year: "2024",
+    client: "Kanpay Sosyal",
+    image: IMG_SOUTIEN_PSY,
+    description:
+      "Post sansibilizasyon sou jan pou jwenn bon sipò sikolojik.",
+  },
+  {
+    id: 14,
+    title: "Ti Lari Komedyen — WenWenn Promo",
+    category: "Autres",
+    year: "2024",
+    client: "Ti Lari Komedyen",
+    image: IMG_TI_LARI,
+    description:
+      "Flyer pwomosyonèl pou yon komedyen ak pwomosyon WenWenn.",
+  },
+  {
+    id: 15,
+    title: "Le Design Transforme l'Ordinaire",
+    category: "Business",
+    year: "2024",
+    client: "B.D Graphic Design",
+    image: IMG_DESIGN_TRANSFORME,
+    description:
+      "Kat pwomosyonèl pèsonèl pou prezante sèvis design ak yon konsèy kreyasyon.",
+  },
+  {
+    id: 16,
+    title: "Happy Mother's Day",
+    category: "Événements",
+    year: "2024",
+    client: "Kanpay Sosyal",
+    image: IMG_HAPPY_MOTHERS_DAY,
+    description:
+      "Afich selebrasyon pou fèt manman yo ak yon kolaj foto.",
+  },
+  {
+    id: 17,
+    title: "Bon Week-end — Un Sourire",
+    category: "Social Media",
+    year: "2024",
+    client: "Post Motivasyonèl",
+    image: IMG_BON_WEEKEND_SOURIRE,
+    description:
+      "Post motivasyonèl pou wikenn ak yon mesaj pozitif sou souri.",
+  },
+  {
+    id: 18,
+    title: "Pantene — Soins Auto-Administrés",
+    category: "Business",
+    year: "2024",
+    client: "Pantene",
+    image: IMG_PANTENE,
+    description:
+      "Visuel pwomosyonèl pou pwodwi swen chve ak po.",
+  },
+  {
+    id: 19,
+    title: "Happy Birthday — Soraya",
+    category: "Événements",
+    year: "2024",
+    client: "Soraya",
+    image: IMG_SORAYA_BIRTHDAY,
+    description:
+      "Afich anivèsè elegant ak dat espesyal make.",
+  },
+  {
+    id: 20,
+    title: "Construisez Avec Nous",
+    category: "Business",
+    year: "2024",
+    client: "Konstriksyon / BTP",
+    image: IMG_CONSTRUISEZ,
+    description:
+      "Brochure pwomosyonèl pou yon konpayi konstriksyon.",
+  },
+  {
+    id: 21,
+    title: "Photography Carlin",
+    category: "Business",
+    year: "2024",
+    client: "Carlin",
+    image: IMG_PHOTOGRAPHY_CARLIN,
+    description:
+      "Afich sèvis pou yon fotograf pwofesyonèl (shoot, events, fashion, weddings).",
+  },
+  {
+    id: 22,
+    title: "Thé — Ventre Plat",
+    category: "Business",
+    year: "2024",
+    client: "Produit Naturel",
+    image: IMG_THE_VENTRE,
+    description:
+      "Visuel pwodwi pou yon te natirèl.",
+  },
+  {
+    id: 23,
+    title: "Bon Lundi à Tous",
+    category: "Social Media",
+    year: "2024",
+    client: "Post Motivasyonèl",
+    image: IMG_BON_LUNDI_ATOUS,
+    description:
+      "Post motivasyonèl pou kòmanse semèn nan ak yon sitasyon enspirasyon.",
+  },
+];
 
 const CATEGORIES = [
   "TOUT",
@@ -153,8 +380,14 @@ const TESTIMONIALS = [
 /* =========================================================
    PLACEHOLDERS — À REMPLACER
    ========================================================= */
+const CONTACT = {
+  whatsappLink: "https://wa.me/message/M5IDTXXARJJ6N1", // vrè lyen WhatsApp B.D Graphic Design
+  email: "contact@bdgraphic.com", // REMPLACEZ par votre email
+  instagram: "https://instagram.com/bdgraphic", // REMPLACEZ
+  facebook: "https://facebook.com/bdgraphic", // REMPLACEZ
+};
 
-const NAV_LINKS = ["ACCUEIL", "PORTFOLIO", "SERVICES", "FORMATIONS", "À PROPOS", "CONTACT"];
+const NAV_LINKS = ["ACCUEIL", "PORTFOLIO", "SERVICES", "À PROPOS", "CONTACT"];
 
 /* =========================================================
    COMPOSANT: HEADER
@@ -580,220 +813,6 @@ function Services() {
 }
 
 /* =========================================================
-   COMPOSANT: TARIF & PEMAN NATCASH
-   ========================================================= */
-const PRICING = [
-  {
-    id: 1,
-    title: "FLYERS",
-    price: "25$",
-    desc: "Design flyer pwofesyonèl pou evènman, pwomosyon, oswa biznis ou.",
-  },
-  {
-    id: 2,
-    title: "BRANDING",
-    price: "50$",
-    desc: "Idantite vizyèl konplè: logo, koulè, ak style pou mak ou.",
-  },
-];
-
-function NatCashModal({ onClose }) {
-  useEffect(() => {
-    const onKey = (e) => {
-      if (e.key === "Escape") onClose();
-    };
-    window.addEventListener("keydown", onKey);
-    return () => window.removeEventListener("keydown", onKey);
-  }, []);
-
-  return (
-    <div
-      className="fixed inset-0 z-[100] flex items-center justify-center p-4 fade-in"
-      style={{ backgroundColor: "rgba(8,8,8,0.75)" }}
-      onClick={onClose}
-      role="dialog"
-      aria-modal="true"
-      aria-label="Payer avec NatCash"
-    >
-      <div
-        className="relative max-w-sm w-full rounded-2xl overflow-hidden border border-gray-200 p-6 text-center"
-        style={{ backgroundColor: "#FFFFFF" }}
-        onClick={(e) => e.stopPropagation()}
-      >
-        <button
-          onClick={onClose}
-          aria-label="Fermer"
-          className="absolute top-4 right-4 z-10 w-9 h-9 rounded-full flex items-center justify-center text-[#666666] hover:text-[#111111] hover:bg-[#EAEAEA] transition-all duration-300"
-        >
-          <X size={20} />
-        </button>
-        <p className="text-violet-600 text-xs tracking-[0.3em] mb-2 mt-2">PAYER AVEC</p>
-        <h3 className="text-2xl font-black text-[#111111] mb-5">NatCash</h3>
-        <img
-          src="/images/natcash-qr.jpg"
-          alt="Code QR NatCash pour payer B.D Graphic Design"
-          className="w-full rounded-xl border border-gray-200 mb-5"
-        />
-        <p className="text-[#666666] text-sm">
-          Eskane kòd QR la ak app NatCash ou, oswa voye peman an dirèkteman sou:
-        </p>
-        <p className="text-[#111111] font-bold text-lg mt-1">50933783560</p>
-        <p className="text-[#666666] text-xs mt-4">
-          Apre peman an, voye yon captur ekran sou WhatsApp pou konfime.
-        </p>
-        <a
-          href={CONTACT.whatsappLink}
-          target="_blank"
-          rel="noreferrer"
-          className="inline-flex items-center justify-center gap-2 bg-violet-600 text-white font-semibold px-6 py-3 rounded-full hover:bg-violet-700 transition-all duration-300 mt-5 w-full"
-        >
-          CONFIRMER SUR WHATSAPP
-        </a>
-      </div>
-    </div>
-  );
-}
-
-function Pricing() {
-  const [showModal, setShowModal] = useState(false);
-
-  return (
-    <section className="py-28 px-6 md:px-10" style={{ backgroundColor: "#FFFFFF" }}>
-      <div className="max-w-7xl mx-auto">
-        <div className="max-w-xl mb-14 fade-in-up">
-          <p className="text-violet-600 text-xs tracking-[0.3em] mb-3">TARIF</p>
-          <h2 className="text-4xl md:text-5xl font-black text-[#111111] mb-5">
-            SÈVIS & PRI
-          </h2>
-          <p className="text-[#666666] text-lg">
-            Chwazi sèvis ou bezwen an, epi peye fasil ak NatCash.
-          </p>
-        </div>
-
-        <div className="grid md:grid-cols-2 gap-6 mb-12">
-          {PRICING.map((p) => (
-            <div
-              key={p.id}
-              className="p-8 rounded-xl border border-gray-200 hover:border-violet-600/40 transition-all duration-500 fade-in-up"
-              style={{ backgroundColor: "#F7F7F5" }}
-            >
-              <div className="flex items-center justify-between mb-4">
-                <h3 className="text-[#111111] font-bold text-xl tracking-wide">
-                  {p.title}
-                </h3>
-                <span className="text-violet-600 font-black text-2xl">{p.price}</span>
-              </div>
-              <p className="text-[#666666] leading-relaxed">{p.desc}</p>
-            </div>
-          ))}
-        </div>
-
-        <div className="flex justify-center">
-          <button
-            onClick={() => setShowModal(true)}
-            className="inline-flex items-center gap-2 bg-violet-600 text-white font-semibold px-8 py-4 rounded-full hover:bg-violet-700 transition-all duration-300 shadow-[0_0_25px_rgba(124,58,237,0.25)]"
-          >
-            PAYER AVEC NATCASH <ArrowRight size={18} />
-          </button>
-        </div>
-      </div>
-
-      {showModal && <NatCashModal onClose={() => setShowModal(false)} />}
-    </section>
-  );
-}
-
-/* =========================================================
-   COMPOSANT: FÒMASYON (videyo pou vann)
-   ========================================================= */
-const FORMATIONS = [
-  {
-    id: 1,
-    title: "Aprann PixelLab",
-    price: "5000G",
-    description:
-      "Aprann kreye bèl flyers, afich, logo ak lòt grafik pwofesyonèl dirèkteman sou telefòn ou avèk PixelLab. Fòmasyon an fèt pou débutan ak moun ki vle amelyore konpetans yo nan konsepsyon grafik.",
-    tiktokUrl: "https://vt.tiktok.com/ZS4oENBqc/",
-  },
-];
-
-function TikTokEmbed({ url }) {
-  useEffect(() => {
-    if (window.tiktokEmbedLoaded) {
-      if (window.__tiktokReload) window.__tiktokReload();
-      return;
-    }
-    const script = document.createElement("script");
-    script.src = "https://www.tiktok.com/embed.js";
-    script.async = true;
-    document.body.appendChild(script);
-    window.tiktokEmbedLoaded = true;
-  }, []);
-
-  return (
-    <blockquote
-      className="tiktok-embed"
-      cite={url}
-      style={{ maxWidth: "100%", minWidth: "260px", margin: 0 }}
-    >
-      <section></section>
-    </blockquote>
-  );
-}
-
-function Formations() {
-  const [payingFor, setPayingFor] = useState(null);
-
-  return (
-    <section id="formations" className="py-28 px-6 md:px-10" style={{ backgroundColor: "#F7F7F5" }}>
-      <div className="max-w-7xl mx-auto">
-        <div className="max-w-xl mb-14 fade-in-up">
-          <p className="text-violet-600 text-xs tracking-[0.3em] mb-3">FÒMASYON</p>
-          <h2 className="text-4xl md:text-5xl font-black text-[#111111] mb-5">
-            APRANN AK NOU
-          </h2>
-          <p className="text-[#666666] text-lg">
-            Videyo fòmasyon pratik pou aprann fè design tankou yon pwofesyonèl,
-            dirèkteman sou telefòn ou.
-          </p>
-        </div>
-
-        <div className="grid md:grid-cols-2 gap-8">
-          {FORMATIONS.map((f) => (
-            <div
-              key={f.id}
-              className="rounded-2xl overflow-hidden border border-gray-200 fade-in-up"
-              style={{ backgroundColor: "#FFFFFF" }}
-            >
-              <div className="flex justify-center p-4" style={{ backgroundColor: "#080808" }}>
-                <TikTokEmbed url={f.tiktokUrl} />
-              </div>
-              <div className="p-7">
-                <div className="flex items-center justify-between mb-3">
-                  <h3 className="text-[#111111] font-bold text-xl tracking-wide">
-                    {f.title}
-                  </h3>
-                  <span className="text-violet-600 font-black text-2xl">{f.price}</span>
-                </div>
-                <p className="text-[#666666] leading-relaxed mb-6">{f.description}</p>
-                <button
-                  onClick={() => setPayingFor(f)}
-                  className="inline-flex items-center justify-center gap-2 bg-violet-600 text-white font-semibold px-6 py-3 rounded-full hover:bg-violet-700 transition-all duration-300 w-full"
-                >
-                  PAYER AVEC NATCASH <ArrowRight size={16} />
-                </button>
-              </div>
-            </div>
-          ))}
-        </div>
-      </div>
-
-      {payingFor && <NatCashModal onClose={() => setPayingFor(null)} />}
-    </section>
-  );
-}
-
-/* =========================================================
    COMPOSANT: À PROPOS
    ========================================================= */
 function About() {
@@ -919,6 +938,33 @@ function WhyChooseMe() {
 /* =========================================================
    COMPOSANT: MES DESIGNS EN ACTION
    ========================================================= */
+const portfolioProjects = [
+  { id: 1, title: "Nou Bouke — Kanpay Konsyantizasyon", category: "flyers", image: IMG_NOU_BOUKE, description: "Afich konsyantizasyon pou ensekirite an Ayiti, ak referans istorik 1804/2024." },
+  { id: 2, title: "Ti Lari Komedyen — WenWenn Promo", category: "flyers", image: IMG_TI_LARI, description: "Flyer pwomosyonèl pou yon komedyen ak pwomosyon WenWenn." },
+  { id: 3, title: "Trayizon — Joe Style", category: "flyers", image: IMG_TRAYIZON, description: "Afich \"Coming Soon\" pou yon nouvo mizik ki ap soti." },
+  { id: 4, title: "Soutien Psychologique", category: "flyers", image: IMG_SOUTIEN_PSY, description: "Post sansibilizasyon sou jan pou jwenn bon sipò sikolojik." },
+  { id: 5, title: "Construisez Avec Nous", category: "flyers", image: IMG_CONSTRUISEZ, description: "Brochure pwomosyonèl pou yon konpayi konstriksyon." },
+  { id: 6, title: "Thé — Ventre Plat", category: "flyers", image: IMG_THE_VENTRE, description: "Visuel pwodwi pou yon te natirèl." },
+  { id: 7, title: "C'est un Autre Lundi — Learnix", category: "social-media", image: IMG_LUNDI_LEARNIX, description: "Post motivasyonèl pou rezo sosyal, ak yon mesaj sou valè tan." },
+  { id: 8, title: "Bon Début de Semaine", category: "social-media", image: IMG_BON_DEBUT_FEMME, description: "Post motivasyonèl pou kòmanse semèn nan ak bon enèji." },
+  { id: 9, title: "Bon Début de Semaine à Tous", category: "social-media", image: IMG_BON_DEBUT_HOMME, description: "Dezyèm vèsyon post motivasyonèl pou kòmansman semèn nan." },
+  { id: 10, title: "Bon Week-end — Un Sourire", category: "social-media", image: IMG_BON_WEEKEND_SOURIRE, description: "Post motivasyonèl pou wikenn ak yon mesaj pozitif sou souri." },
+  { id: 11, title: "Bon Lundi à Tous", category: "social-media", image: IMG_BON_LUNDI_ATOUS, description: "Post motivasyonèl pou kòmanse semèn nan ak yon sitasyon enspirasyon." },
+  { id: 12, title: "Le Design Transforme l'Ordinaire", category: "social-media", image: IMG_DESIGN_TRANSFORME, description: "Kat pwomosyonèl pèsonèl pou prezante sèvis design ak yon konsèy kreyasyon." },
+  { id: 13, title: "Bière Haïtien", category: "branding", image: IMG_BIERE_HAITIEN, description: "Etikèt ak visuel pwomosyonèl pou yon mak byè lokal." },
+  { id: 14, title: "Nana — L'huile d'aloe", category: "branding", image: IMG_NANA_ALOE, description: "Design etikèt pou yon pwodwi swen chve ak lwil aloe vera." },
+  { id: 15, title: "Haïtien Eau", category: "branding", image: IMG_HAITIEN_EAU, description: "Branding ak visuel pwomosyonèl pou yon mak dlo pirifye." },
+  { id: 16, title: "Diri Lakay", category: "branding", image: IMG_DIRI_LAKAY, description: "Branding ak afich pwomosyonèl pou yon mak manje lokal." },
+  { id: 17, title: "Pasta Haïtienne", category: "branding", image: IMG_PASTA_HAITIENNE, description: "Visuel pwodwi pou yon mak pat alimantè lokal." },
+  { id: 18, title: "Dahana — Maïs Haïtien", category: "branding", image: IMG_DAHANA_MAIS, description: "Kanpay pwomosyonèl pou yon mak farin mayi lokal." },
+  { id: 19, title: "Pantene — Soins Auto-Administrés", category: "branding", image: IMG_PANTENE, description: "Visuel pwomosyonèl pou pwodwi swen chve ak po." },
+  { id: 20, title: "Photography Carlin", category: "branding", image: IMG_PHOTOGRAPHY_CARLIN, description: "Afich sèvis pou yon fotograf pwofesyonèl." },
+  { id: 21, title: "Happy Birthday — Jean Chloé", category: "invitations", image: IMG_JEAN_CHLOE, description: "Afich anivèsè pèsonalize ak foto ak dat espesyal." },
+  { id: 22, title: "Happy Birthday — Soraya", category: "invitations", image: IMG_SORAYA_BIRTHDAY, description: "Afich anivèsè elegant ak dat espesyal make." },
+  { id: 23, title: "Happy Mother's Day", category: "invitations", image: IMG_HAPPY_MOTHERS_DAY, description: "Afich selebrasyon pou fèt manman yo ak yon kolaj foto." },
+  // Egzanp: ajoute yon nouvo pwojè san imaj ankò — placeholder la ap parèt otomatikman
+  // { id: 24, title: "Nouvo Pwojè", category: "flyers", image: null, description: "Deskripsyon pwojè a." },
+];
 
 const DESIGN_FILTERS = [
   { key: "tous", label: "TOUS" },
@@ -1372,8 +1418,6 @@ export default function App() {
       <Hero />
       <Portfolio onOpen={openProject} />
       <Services />
-      <Pricing />
-      <Formations />
       <About />
       <WhyChooseMe />
       <DesignsInAction />
