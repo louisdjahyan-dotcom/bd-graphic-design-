@@ -1,0 +1,165 @@
+{
+  "projects": [
+    {
+      "id": 1,
+      "title": "Nou Bouke — Kanpay Konsyantizasyon",
+      "category": "flyers",
+      "image": "/images/nou-bouke.jpg",
+      "description": "Afich konsyantizasyon pou ensekirite an Ayiti, ak referans istorik 1804/2024."
+    },
+    {
+      "id": 2,
+      "title": "Ti Lari Komedyen — WenWenn Promo",
+      "category": "flyers",
+      "image": "/images/ti-lari.jpg",
+      "description": "Flyer pwomosyonèl pou yon komedyen ak pwomosyon WenWenn."
+    },
+    {
+      "id": 3,
+      "title": "Trayizon — Joe Style",
+      "category": "flyers",
+      "image": "/images/trayizon.jpg",
+      "description": "Afich \\\"Coming Soon\\\" pou yon nouvo mizik ki ap soti."
+    },
+    {
+      "id": 4,
+      "title": "Soutien Psychologique",
+      "category": "flyers",
+      "image": "/images/soutien-psy.jpg",
+      "description": "Post sansibilizasyon sou jan pou jwenn bon sipò sikolojik."
+    },
+    {
+      "id": 5,
+      "title": "Construisez Avec Nous",
+      "category": "flyers",
+      "image": "/images/construisez.jpg",
+      "description": "Brochure pwomosyonèl pou yon konpayi konstriksyon."
+    },
+    {
+      "id": 6,
+      "title": "Thé — Ventre Plat",
+      "category": "flyers",
+      "image": "/images/the-ventre.jpg",
+      "description": "Visuel pwodwi pou yon te natirèl."
+    },
+    {
+      "id": 7,
+      "title": "C'est un Autre Lundi — Learnix",
+      "category": "social-media",
+      "image": "/images/lundi-learnix.jpg",
+      "description": "Post motivasyonèl pou rezo sosyal, ak yon mesaj sou valè tan."
+    },
+    {
+      "id": 8,
+      "title": "Bon Début de Semaine",
+      "category": "social-media",
+      "image": "/images/bon-debut-femme.jpg",
+      "description": "Post motivasyonèl pou kòmanse semèn nan ak bon enèji."
+    },
+    {
+      "id": 9,
+      "title": "Bon Début de Semaine à Tous",
+      "category": "social-media",
+      "image": "/images/bon-debut-homme.jpg",
+      "description": "Dezyèm vèsyon post motivasyonèl pou kòmansman semèn nan."
+    },
+    {
+      "id": 10,
+      "title": "Bon Week-end — Un Sourire",
+      "category": "social-media",
+      "image": "/images/bon-weekend-sourire.jpg",
+      "description": "Post motivasyonèl pou wikenn ak yon mesaj pozitif sou souri."
+    },
+    {
+      "id": 11,
+      "title": "Bon Lundi à Tous",
+      "category": "social-media",
+      "image": "/images/bon-lundi-atous.jpg",
+      "description": "Post motivasyonèl pou kòmanse semèn nan ak yon sitasyon enspirasyon."
+    },
+    {
+      "id": 12,
+      "title": "Le Design Transforme l'Ordinaire",
+      "category": "social-media",
+      "image": "/images/design-transforme.jpg",
+      "description": "Kat pwomosyonèl pèsonèl pou prezante sèvis design ak yon konsèy kreyasyon."
+    },
+    {
+      "id": 13,
+      "title": "Bière Haïtien",
+      "category": "branding",
+      "image": "/images/biere-haitien.jpg",
+      "description": "Etikèt ak visuel pwomosyonèl pou yon mak byè lokal."
+    },
+    {
+      "id": 14,
+      "title": "Nana — L'huile d'aloe",
+      "category": "branding",
+      "image": "/images/nana-aloe.jpg",
+      "description": "Design etikèt pou yon pwodwi swen chve ak lwil aloe vera."
+    },
+    {
+      "id": 15,
+      "title": "Haïtien Eau",
+      "category": "branding",
+      "image": "/images/haitien-eau.jpg",
+      "description": "Branding ak visuel pwomosyonèl pou yon mak dlo pirifye."
+    },
+    {
+      "id": 16,
+      "title": "Diri Lakay",
+      "category": "branding",
+      "image": "/images/diri-lakay.jpg",
+      "description": "Branding ak afich pwomosyonèl pou yon mak manje lokal."
+    },
+    {
+      "id": 17,
+      "title": "Pasta Haïtienne",
+      "category": "branding",
+      "image": "/images/pasta-haitienne.jpg",
+      "description": "Visuel pwodwi pou yon mak pat alimantè lokal."
+    },
+    {
+      "id": 18,
+      "title": "Dahana — Maïs Haïtien",
+      "category": "branding",
+      "image": "/images/dahana-mais.jpg",
+      "description": "Kanpay pwomosyonèl pou yon mak farin mayi lokal."
+    },
+    {
+      "id": 19,
+      "title": "Pantene — Soins Auto-Administrés",
+      "category": "branding",
+      "image": "/images/pantene.jpg",
+      "description": "Visuel pwomosyonèl pou pwodwi swen chve ak po."
+    },
+    {
+      "id": 20,
+      "title": "Photography Carlin",
+      "category": "branding",
+      "image": "/images/photography-carlin.jpg",
+      "description": "Afich sèvis pou yon fotograf pwofesyonèl."
+    },
+    {
+      "id": 21,
+      "title": "Happy Birthday — Jean Chloé",
+      "category": "invitations",
+      "image": "/images/jean-chloe.jpg",
+      "description": "Afich anivèsè pèsonalize ak foto ak dat espesyal."
+    },
+    {
+      "id": 22,
+      "title": "Happy Birthday — Soraya",
+      "category": "invitations",
+      "image": "/images/soraya-birthday.jpg",
+      "description": "Afich anivèsè elegant ak dat espesyal make."
+    },
+    {
+      "id": 23,
+      "title": "Happy Mother's Day",
+      "category": "invitations",
+      "image": "/images/happy-mothers-day.jpg",
+      "description": "Afich selebrasyon pou fèt manman yo ak yon kolaj foto."
+    }
+  ]
+}
